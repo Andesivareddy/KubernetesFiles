@@ -29,7 +29,7 @@ cilium install
 
 cilium status
 kubectl -n kube-system exec cilium-2hq5z -- cilium-dbg status
-cilium connectivity test
+
 
 4) Check nodes
 
