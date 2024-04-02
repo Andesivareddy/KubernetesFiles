@@ -42,3 +42,11 @@ kubectl rollout history deployment {depl-name}
 
 kubectl run test-nginx-service --image=busybox
 kubectl exec -it {pod-name} -- bash
+
+5) edit the svc or deplyment manifests files
+
+kubectl edit svc <service file name> or kubectl edit deployment <deployment file name>
+
+6) print in the yaml format
+
+kubectl get svc <service file name> -o yaml
