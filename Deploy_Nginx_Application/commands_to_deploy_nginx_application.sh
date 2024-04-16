@@ -14,14 +14,23 @@ kubectl describe svc {svc-name}
 kubectl get ep
 
 kubectl get svc --show-labels
+
+-> below commands list the services which are associated with app=nginx labels.
 kubectl get svc -l app=nginx 
 
 kubectl get pod --show-labels
 kubectl get pod -l app=nginx
-kubectl logs -l app=nginx
+
+-> below command is used to show the multiple replica pod logs at a time
+
+kubectl logs -l app=nginx   
+
+-> Below command get the pods from kubernetes namespace 
 
 kubectl get pod -n kube-system --show-labels
 kubectl logs -n kube-system -l="name=weave-net" -c weave
+
+-> below command shows and list the labels for nodes
 
 kubectl get node —show-labels
 
